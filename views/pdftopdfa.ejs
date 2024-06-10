@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF to PDF/A</title>
+    <link rel="stylesheet" href="/stylesheets/style1.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <h2>PDF to PDF/A</h2>
+        <form action="/pdftopdfa" method="POST" enctype="multipart/form-data">
+            <input type="file" name="pdfFile" accept=".pdf">
+            <button type="submit">Convert to PDF/A</button>
+        </form>
+    </main>
+
+</body>
+</html>

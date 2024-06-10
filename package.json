@@ -1,0 +1,28 @@
+{
+  "name": "convert",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@ilovepdf/ilovepdf-js": "^0.2.3",
+    "@ilovepdf/ilovepdf-nodejs": "^0.2.6",
+    "axios": "^1.7.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "firebase-admin": "^12.1.1",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "multer": "^1.4.5-lts.1",
+    "open": "^10.1.0",
+    "path": "^0.12.7",
+    "stream": "^0.0.2"
+  }
+}

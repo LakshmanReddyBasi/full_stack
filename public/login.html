@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Member Login</title>
+<style>
+body {
+  background-color: #222;
+  background-image:url('/public/CSS/login_back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family:Impact,italic, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container {
+
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,10);
+  width: 400px;
+  height:320px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Courier New', monospace;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  background-color: #555;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0099cc;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.create-account {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.create-account button {
+  background-color: #555;
+  color: #fff;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>MEMBER LOGIN</h2>
+  <form action="/login" method="POST">
+    <div>
+      <label for="email"><i class="fas fa-user"></i></label>
+      <input type="email" id="email" placeholder="Email" name="email" required>
+    </div>
+    <div>
+      <label for="password"><i class="fas fa-lock"></i></label>
+      <input type="password" id="password" placeholder="Password" name="password" required>
+    </div>
+    <button type="submit">LOGIN</button>
+    
+  </form>
+  <div class="create-account">
+    <p>Don't have an account? <a style="color:#0099cc;" href="/signup">Signup here</a></p>
+  </div>
+</div>
+</body>
+</html>

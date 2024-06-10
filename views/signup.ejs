@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+<style>
+body {
+  background-image:url('signup_back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #222;
+  color: #fff;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgba(0,0,0,10);
+  width: 400px;
+  height:455px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  background-color: #444;
+  color: #fff;
+  font-family: 'Courier New', monospace;
+
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  background-color: #555;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #00bfff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+button:hover {
+  background-color: #0099cc;
+}
+
+.already-have-account {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.already-have-account button {
+  background-color: #555;
+  color: #fff;
+  font-size: 18px;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>SIGN UP</h2>
+  <form action="/signup" method="POST">
+    <div>
+      <label for="username"><i class="fas fa-user"></i></label>
+      <input type="text" id="username" placeholder="Username" name="username" required>
+    </div>
+    <div>
+      <label for="email"><i class="fas fa-email"></i></label>
+      <input type="email" id="email" placeholder="email" name="email" required>
+    </div>
+    <div>
+      <label for="phonenumber"><i class="fas fa-phone"></i></label>
+      <input type="tel" id="phonenumber" placeholder="Phone" name="phone" required>
+    </div>
+    <div>
+      <label for="password"><i class="fas fa-lock"></i></label>
+      <input type="password" id="password" placeholder="Password" name="password" required>
+    </div>
+    <div>
+      <label for="confirm-password"><i class="fas fa-lock"></i></label>
+      <input type="password" id="confirm-password" placeholder="Confirm Password" name="confirm_password" required>
+    </div>
+    <button type="submit">SIGN UP</button>
+  </form>
+  <div class="already-have-account">
+    <p>Already have an account? <a  href="/login">Login here</a></p>
+    
+  </div>
+
+</div>
+</body>
+</html>
